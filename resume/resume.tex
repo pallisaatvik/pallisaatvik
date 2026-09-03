@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Saatvik Palli
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Saatvik Palli} \\ \vspace{1pt}
+    \small \href{mailto:pallisaatvik@gmail.com}{\underline{pallisaatvik@gmail.com}} $|$
+    614-705-3222 $|$
+    \href{https://saatvikpalli.com}{\underline{Portfolio}} $|$
+    \href{https://linkedin.com/in/saatvik-palli}{\underline{LinkedIn}} $|$
+    \href{https://github.com/pallisaatvik}{\underline{GitHub}}
+\end{center}
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{Champaign, IL}
+      {Master of Computer Science}{Aug. 2026 -- Dec. 2027}
+    \resumeSubheading
+      {Michigan State University, Honors College}{East Lansing, MI}
+      {B.S. in Computer Science, GPA: 3.9/4.0}{Aug. 2022 -- May 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Chief Technology Officer}{Aug. 2025 -- Present}
+      {\href{https://www.nexxup.net/}{\underline{Nexxup Music Discovery}}}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Enabled week-over-week momentum ranking for \textbf{144 independent artists} by building a daily ETL pipeline accumulating 380,000+ datapoints across 10 streaming and social platforms.}
+        \resumeItem{Cut artist leaderboard load times from \textbf{3-4 seconds to $\sim$600 ms} by shrinking the initial bundle 57\%, 
+        replacing $O(n^2)$ scans with $O(1)$ hash-set lookups,
+        and deduplicating concurrent API requests behind a TTL cache.}
+        \resumeItem{Defined the data model and service boundaries while mentoring \textbf{3 developers and 2 designers} over 9 months through branch-per-developer workflow, code review, and 110+ PRs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analytics \& Engineering Intern}{May 2024 -- Aug. 2026}
+      {Auto-Owners Insurance}{Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Spearheaded upgrading licensing management to an internal SQL Server system, saving \textbf{\$115K over 5 years}, by engineering ETL pipelines and stored procedures that surfaced real-time compliance status.}
+        \resumeItem{Developed a neural network capable of scoring \textbf{10,000+ claims per second}, producing real-time difficulty ratings used to balance caseloads across adjusters, with scikit-learn and MLflow.}
+        \resumeItem{Built a Power BI scoring model ranking \textbf{500+ adjusters across 43 branches} on \textbf{8 weighted claim-handling metrics}, exposing systematic gaps in rep training and technology adoption.}
+        \resumeItem{Analyzed thousands of claims with Pandas and NumPy to project 18-month cost savings of chatbot-assisted salvage handling, generating reports that strengthened vendor negotiations and contract renewal.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{Aug. 2025 -- Dec. 2025}
+      {\href{https://capstone.cse.msu.edu/2025-08/projects/magna-llm3dmid/}{\underline{Magna International, Michigan State Capstone}}}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Developed a CAD classification pipeline enabling engineers to find functionally similar parts across \textbf{2,000+ automotive components}, by tagging 3D meshes with a vision LLM using extracted geometry statistics.}
+        \resumeItem{\textbf{Increased tagging accuracy by 64\%} through prompt A/B testing and multi-view rendering optimization.}
+        \resumeItem{\textbf{Cut per-request API cost by $\sim$50\%} and eliminated rate-limit failures by moving tagging to an OpenAI Batch API pipeline that chunked 1,800 parts into 90 asynchronous jobs with state persistence for interrupted runs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Executive Board}{Aug. 2024 -- May 2026}
+      {Imagine Software Club at MSU}{East Lansing, MI}
+      \resumeItemListStart
+        \resumeItem{Interviewed and matched \textbf{$\sim$50 students to 6 startup projects}, aligning technical experience to effective teams.}
+        \resumeItem{Designed and hosted a Bash scripting workshop for \textbf{60+ students} by hosting a custom server environment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{\href{https://www.halffull.pro/}{\underline{Half Full Calendar}}} $|$ \emph{JavaScript, Electron, Firebase, Google Calendar API}}{}
+          \resumeItemListStart
+            \resumeItem{Built two-way Google Calendar synchronization backed by Firebase persistence, enabling offline access and cross-session state for a desktop calendar since released on the \textbf{Mac App Store and Microsoft Store}.}
+            \resumeItem{Contributed frontend fixes to event creation and viewing flows on a team-built Electron application.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Insurance Risk Factor Neural Network} $|$ \emph{Python, Flask, Scikit-Learn, Plotly, Git/GitHub}}{}
+          \resumeItemListStart
+            \resumeItem{Led a team of 3 to build a web app visualizing health risk factors and projected financial loss.}
+            \resumeItem{\textbf{Improved model accuracy by 8\%} on insurance dataset by tuning a scikit-learn learning MLP.}
+          \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, Bash, JavaScript, C++, C, DAX, HTML/CSS} \\
+     \textbf{Technologies}{: SQL Server, GCP, Docker, React, Flask, Firebase/Firestore, Pandas, NumPy, PyTorch, Scikit-learn, MLflow, Power BI, Plotly, Git/GitHub, Electron} \\
+     \textbf{Concepts}{: Data Modeling, ETL, Data Warehousing, Distributed Systems, Database Systems (SQL \& NoSQL), Query Optimization, Algorithms \& Data Structures, Machine Learning, Linux} \\
+     \textbf{Interests}{: Jazz trumpet, Eagle Scout, Brazilian jiu-jitsu, poker}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

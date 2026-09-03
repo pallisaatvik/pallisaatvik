@@ -1,0 +1,9 @@
+.DS_Store
+
+# TEX stuff      
+resume/resume.aux
+resume/resume.fdb_latexmk
+resume/resume.fls
+resume/resume.log
+resume/resume.out
+resume/resume.synctex.gz
