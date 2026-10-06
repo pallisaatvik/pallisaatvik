@@ -7,11 +7,12 @@ cp ~/Code/pallisaatvik/resume/resume.pdf ~/Downloads
 cd ~/Code/pallisaatvik
 git add .
 git commit -m "Auto resume update"
-
+git push
 # Update site
+
 cd ~/Code/personal-site/
 git add .
 git commit -m "Auto resume update"
-
+git push
 
 # todo make sure to update simplify and linkedin
