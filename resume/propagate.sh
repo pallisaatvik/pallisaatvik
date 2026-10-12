@@ -8,11 +8,12 @@ cd ~/Code/pallisaatvik
 git add .
 git commit -m "Auto resume update"
 git push
-# Update site
 
+# Update site
 cd ~/Code/personal-site/
 git add .
 git commit -m "Auto resume update"
 git push
 
 # todo make sure to update simplify and linkedin
+# and update whatevers on my phone
