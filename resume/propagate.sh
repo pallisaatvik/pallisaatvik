@@ -1,7 +1,7 @@
 cp ~/Code/pallisaatvik/resume/resume.pdf ~/Code/pallisaatvik
 cp ~/Code/pallisaatvik/resume/resume.pdf ~/Code/personal-site/public/
-cp ~/Code/pallisaatvik/resume/resume.pdf ~/Documents
-cp ~/Code/pallisaatvik/resume/resume.pdf ~/Downloads
+cp ~/Code/pallisaatvik/resume/resume.pdf ~/Documents/resume.pdf
+cp ~/Code/pallisaatvik/resume/resume.pdf ~/Downloads/resume.pdf
 
 # update this repo
 cd ~/Code/pallisaatvik
