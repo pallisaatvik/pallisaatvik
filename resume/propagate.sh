@@ -2,8 +2,8 @@ cp ~/Code/pallisaatvik/resume/resume.pdf ~/Code/pallisaatvik
 cp ~/Code/pallisaatvik/resume/resume.pdf ~/Code/personal-site/public/
 
 # cloud wierd delete?
-rm ~/Code/pallisaatvik/resume/resume.pdf ~/Documents/resume.pdf
-rm ~/Code/pallisaatvik/resume/resume.pdf ~/Downloads/resume.pdf
+rm ~/Documents/resume.pdf
+rm ~/Downloads/resume.pdf
 
 cp ~/Code/pallisaatvik/resume/resume.pdf ~/Documents/resume.pdf
 cp ~/Code/pallisaatvik/resume/resume.pdf ~/Downloads/resume.pdf
