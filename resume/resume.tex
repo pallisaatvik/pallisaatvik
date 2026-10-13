@@ -42,7 +42,13 @@
 % external link with arrow
 % external-link arrow: short, fat, underlined with the link text
 \newcommand{\extarw}{\raisebox{0.3ex}{\tikz[baseline=0pt]{\draw[line width=0.7pt,-{Stealth[length=2.6pt,width=2.6pt]}] (0,0) -- (0.14,0.14);}}}
+
+% underline and arrow
 \newcommand{\extlink}[2]{\href{#1}{\underline{#2\,\extarw}}}
+% \newcommand{\extlink}[2]{\href{#1}{}}
+
+% underline only, no arrow (plain text stays ATS-readable)
+\newcommand{\ullink}[2]{\href{#1}{\underline{#2}}}
 
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -76,11 +82,11 @@
 
 \begin{center}
     \textbf{\Huge \scshape Saatvik Palli} \\ \vspace{1pt}
-    pallisaatvik@gmail.com $|$
     614-705-3222 $|$
-    saatvikpalli.com $|$
-    linkedin.com/in/saatvik-palli $|$
-    github.com/pallisaatvik
+    pallisaatvik@gmail.com $|$
+    \ullink{https://saatvikpalli.com}{saatvikpalli.com} $|$
+    \ullink{https://www.linkedin.com/in/saatvik-palli}{linkedin.com/in/saatvik-palli} $|$
+    \ullink{https://github.com/pallisaatvik}{github.com/pallisaatvik}
 \end{center}
 \vspace{-10pt}
 
